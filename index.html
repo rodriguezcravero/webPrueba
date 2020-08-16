@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- meta tag para que responda a cambios con media query -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- link a la hoja de estilos -->
+	<link rel="stylesheet" href="estilo.css">
+	<!-- El titulo de la pestaña del navegador -->
+	<title>Web del club Reconquista</title>
+</head>
+<body>
+	<div id="noMostrar">
+		Este sitio no está optimizado para poder verse desde un dispositivo móvil. Podrá ver la página desde una computadora.
+	</div>
+	<div id="mostrar">
+	<!-- La primera parte de nuestra web debería ser el header -->
+	<header id="inicio">
+		<!-- Encierro los titulos en un div para poder estilizar todo el bloque -->
+		<div id="titulo">
+			<!-- Este debería ser el único H1 que utilizamos, en la cabecera -->
+			<h1>Bienvenidos a la página oficial del Club Reconquista</h1>
+			<h3>(Nuestra primera página web)</h3>
+		</div>
+		<!-- Dentro del header, hago un navegador con los links del sitio -->
+			<nav>
+				<!-- Lista desordenada, con 4 items, cada uno de ellos un link -->
+				<ul>
+					<li> <a href="#historia">Nuestra historia</a></li>
+					<li> <a href="#actividades">Actividades</a></li>
+					<li> <a href="#biblioteca">Biblioteca</a></li>
+					<li> <a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+	</header>
+	<!-- Comienza la sección principal de nuestra web, con 4 secciones -->
+	<main>
+		<!-- La primera sección es la historia del club -->
+		<section id="historia">
+			<!-- Imagen de portada de la pagina -->
+			<img id="fotoFrente" src="img/frenteClub.jpg" alt="frente del club">
+			<!-- Este bloque de texto va a tener menor tamaño, por lo que encierro todo en un div -->
+			<div id="textoHistoria">
+				<h2>La historia del club Reconquista</h2>
+				<p>
+					Nuestro Club nace un 12 de Octubre de 1903 cuando un grupo de entusiastas deportistas futboleros daban origen al denominado CLUB ATLÉTICO NACIONAL, pero en todo este tiempo transcurrido han sido preservados los preceptos que dan sustento a la actual Reconquista, es decir <em>capacidad, idoneidad, honestidad y dedicación</em>, con las que se han manejado las diferentes Comisiones Directivas que han sido y son conductoras de la institución. Fecha de Fundación: 12 de Octubre de 1903.
+				</p>
+				<!-- Esta lista sólo está aca a modo de diferenciar esta con la del nav -->
+				<ul>
+					<li>Nombre de Origen: Club Atlético Nacional.</li>
+					<li>En el año 1939: Fusión con la asociación Liverpool</li>
+					<li>Nombre desde 1939: Asociación Cultural y Deportiva Reconquista. Biblioteca Joaquín V. Gonzalez.</li>
+					<li>Socios Activos: 800 (ochocientos).</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Hacemos uso de la horizontal rule para dividir dos secciones -->
+		<hr>
+		<!-- 2º sección, fotos e info de las actividades del club -->
+		<section id="actividades">
+			<h2>Actividades</h2>
+			<!-- Usamos por 1º vez un break para dividir elementos inline y agregar espacio -->
+			<br>
+			<p>El club se destaca por sus equipos de baloncesto, que incluyen divisiones inferiores mixtas, equipo profesional de la liga local y equipo femenino que representa a la ciudad junto a los clubes Atenas, Estudiantes y Gimnasia.</p>
+			<br>
+			<img src="img/actividad1.jpg" alt="Gimnasio">
+			<!-- figcaption es un elemento de bloque, por lo que divide las imagenes, por eso está comentado -->
+			<!-- <figcaption>El gimnasio donde se practica baloncesto</figcaption> -->
+			<img src="img/actividad2.jpg" alt="Equipo femenino">
+			<!-- <figcaption>El equipo femenino</figcaption> -->
+			<br>
+			<p>Además del deporte, el club organiza en primavera y verano, actividades al aire libre, camping, visitas a centros culturales y recreativos, entre otras.</p>
+			<br>
+			<img src="img/actividad3.jpg" alt="Salidas recreativas">
+			<!-- <figcaption>Salidas recreativas</figcaption> -->
+			<img src="img/actividad4.jpg" alt="Camping">
+			<!-- <figcaption>Camping</figcaption> -->
+		</section>
+		<hr>
+		<!-- 3º sección: bilbioteca -->
+		<section id="biblioteca">
+			<h2>Biblioteca</h2>
+			<br>
+			<p>
+				La Biblioteca dispone de una colección de 4000 títulos de libros de temas de cultura general, especialmente textos de enseñanza nivel primario y secundario. Posee además una rica colección de libros infantiles, obras literarias y manuales de deportes como asimismo una variada cantidad de ejemplares de revistas deportivos y videos de fútbol. Ofrece a toda la comunidad sus servicios de consulta y búsqueda bibliográfica y el servicio de préstamos a domicilio para sus socios.
+			</p>
+			<br>
+			<img id="biblio1" src="img/biblio1.jpg" alt="Biblioteca">
+			<br>
+			<p>Cuenta con amplia y luminosa sala de lectura, computadoras con acceso a Internet y servicio Wi-fi. Todos los servicios son gratuitos para todos los usuarios de la Biblioteca.</p>
+			<br>
+			<div>
+				<img id="biblio2" src="img/biblio2.jpg" alt="Biblioteca">
+				<img id="biblio3" src="img/biblio3.jpg" alt="Biblioteca">
+			</div>
+			<h3>Colección</h3>
+			<p>Posee una rica colección de alrededor de 4000 títulos de libros que han sido donados por distintas instituciones, empresas, socios y particulares, a la que se suma libros adquirido por la Biblioteca. Los principales temas de la colección son: Obras de carácter general, Literatura, Educación y Deportes.</p>
+		</section>
+		<!-- Ultima sección, la del formulario de contacto -->
+		<section id="contacto">
+			<h2>Envienos su consulta</h2>
+			<br>
+			<p>Escribinos si querés hacerte socio, averiguar por promociones, chequear los horarios y hacer cualquier tipo de consulta.</p>
+			<br>
+			<!-- El elemento Form por lo general tendrá una acción, que será utilizada con programación. Por ahora se marca con # -->
+			<form action="#">
+				<!-- Cada input tendrá una label -->
+				<label for="nombre">Nombre</label>
+				<br>
+				<!-- Tipo texto para el nombre -->
+				<input name="nombre" type="text">
+				<br>
+				<label for="telefono">Telefono</label>
+				<br>
+				<!-- Tipo numero para el teléfono -->
+				<input name="telefono" type="number">
+				<br>
+				<label for="email">Email</label>
+				<br>
+				<!-- Tipo mail para un correo electrónico -->
+				<input name="email" type="mail">
+				<br>
+				<label for="consulta">Escriba su consulta</label>
+				<br>
+				<!-- textarea para que el usuario escriba lo que quiera -->
+				<textarea name="Consulta" id=""></textarea>
+				<br>
+				<button>Enviar</button>
+			</form>
+		</section>
+	</main>
+	<!-- Termina nuestro main, y sólo nos resta la información de contacto, en el footer -->
+	<footer>
+		<p>Sede Social y Deportiva: calle 40 Nº1027 La Plata (1900) - Tel: (0221) 421-6703. Derechos reservados &copy 2020</p>
+		<br>
+		<a href="#inicio">Volver al top</a>
+	</footer>
+	</div>
+</body>
+</html>

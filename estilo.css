@@ -1,0 +1,163 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	padding-top: 20px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+header h1{
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Tahoma, Geneva, sans-serif	;
+}
+p, li, label, a, button{
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+#titulo{
+	height: 100px;
+}
+
+nav
+{
+	height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header nav ul li{
+	list-style-type: none;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#historia, #biblioteca{
+	background-color: #2c588a;
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 50px;
+}
+
+#historia p{
+	text-align: left;
+}
+
+#historia ul
+{
+	text-align: left;
+}
+
+#fotoFrente{
+	height: 600px;
+	width: auto;
+}
+
+#textoHistoria{
+	width: 50%;
+	margin: auto;
+}
+
+#actividades{
+	color: #2c3a4a;
+	text-align: center;
+}
+
+#actividades img
+{
+	height: 350px;
+	width: 550px;
+}
+
+#biblioteca{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#biblioteca h2, h5, p
+{
+	width: 80%;
+	margin: auto;
+}
+
+#biblioteca #biblio1
+{
+	width: 900px;
+	height: auto;
+}
+
+#biblioteca #biblio2, #biblio3
+{
+	width: 450px;
+	height: 300px;
+}
+
+#contacto{
+	background-color: whitesmoke;
+	display: flex;
+	padding-bottom: 50px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	text-align: left;
+}
+
+form input, textarea{
+	width: 300px;
+}
+
+textarea{
+	height: 100px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 120px;
+}
+
+footer p{
+	padding-top: 50px;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+#noMostrar{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	#mostrar{
+		display: none;
+	}
+
+	#noMostrar{
+		display: block;
+		text-align: center;
+		font-size: 2em;
+
+	}
+}
