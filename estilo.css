@@ -1,8 +1,10 @@
+/*Buena costumbre ponerle margin y padding 0 al body*/
 body{
 	margin: 0;
 	padding: 0;
 }
 
+/*Empujo para abajo el header, lo alineo al centro, le doy un fondo negro y color a las letras blanco*/
 header{
 	padding-top: 20px;
 	text-align: center;
@@ -10,9 +12,7 @@ header{
 	color: white;
 }
 
-header h1{
-	margin: 0;
-}
+/*Le voy 2 tipos distintos de fuentes a varios elementos*/
 
 h1, h2, h3, h4, h5, h6{
 	font-family: Tahoma, Geneva, sans-serif	;
@@ -21,16 +21,16 @@ p, li, label, a, button{
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-
+/*Le doy mayor espacio a titulo y nav del que ocupan*/
 #titulo{
 	height: 100px;
 }
-
 nav
 {
 	height: 50px;
-	font-family: Arial, Helvetica, sans-serif;
 }
+
+/*La lista va a ser flex, centrada y con distribución equitativa del espacio*/
 
 header ul{
 	display: flex;
@@ -38,14 +38,21 @@ header ul{
 	justify-content: space-around;
 }
 
+/*Le saco los puntitos a los li*/
+
 header nav ul li{
 	list-style-type: none;
 }
+
+/*Le saco el estilo por defecto a los a*/
 
 header nav ul li a{
 	text-decoration: none;
 	color: white;
 }
+
+/*Mismo estilo para las secciones de historia y biblioteca*/
+/*fondo azul con hexa, texto centrado (incluye las fotos), color blanco y un padding hacia abajo*/
 
 #historia, #biblioteca{
 	background-color: #2c588a;
@@ -54,19 +61,24 @@ header nav ul li a{
 	padding-bottom: 50px;
 }
 
+/*Discrimino el párrafo y la UL de la sección historia, y les doy texto a la izquierda*/
+
 #historia p{
 	text-align: left;
 }
-
 #historia ul
 {
 	text-align: left;
 }
 
+/*Le doy altura a la foto, y el ancho que sea automático*/
+
 #fotoFrente{
 	height: 600px;
 	width: auto;
 }
+
+/*Acá le doy al texto un margen de mitad de pantalla, y con margen automático, así se logra centrar*/
 
 #textoHistoria{
 	width: 50%;
@@ -77,6 +89,8 @@ header nav ul li a{
 	color: #2c3a4a;
 	text-align: center;
 }
+
+/*A las 4 imágenes de la sección activiades les doy el mismo ancho y altura*/
 
 #actividades img
 {
@@ -89,11 +103,15 @@ header nav ul li a{
 	padding-bottom: 50px;
 }
 
+/*A cada uno de los elementos de la sección biblioteca, les doy el mismo ancho y margen automático*/
+
 #biblioteca h2, h5, p
 {
 	width: 80%;
 	margin: auto;
 }
+
+/*Aquí les pongo distintos tamaños a las imágenes, con selectores de ID*/
 
 #biblioteca #biblio1
 {
@@ -114,6 +132,10 @@ header nav ul li a{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+#contacto p{
+	text-align: center;
 }
 
 form {
@@ -147,7 +169,7 @@ footer a{
 	display: none;
 }
 
-
+/*Media Query para detectar el tamaño de la pantalla, de esta forma, al estar en celular desaparece un div y aparece otro*/
 
 @media screen and (max-width: 800px) {
 	#mostrar{
